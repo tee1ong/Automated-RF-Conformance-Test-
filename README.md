@@ -1,5 +1,7 @@
 # Automated-RF-Conformance-Test-
-This report presents the proposal of an automated RF conformance test in Python. A signal generator and
+This project is for submission for the AccelerComm Recruitment Scenario challenge.
+
+This repository presents the proposal of an automated RF conformance test in Python. A signal generator and
 spectrum analyser are configured over assumed SCPI/LAN comms. Power measurement is taken, compared against a two-sided spec window, and reported as human-readable and JSON output. The
 workflow is exercised by a unit-test suite against a fake link.
 
@@ -10,3 +12,5 @@ API the solution therefore does not attend to transport. The system consists of 
 that produces a controlled RF signal, and a spectrum analyser that measures it. The generator's output is
 cabled to the analyser's input; the control computer is not in the RF signal path, it only sends configuration
 commands and queries over LAN and reads back measured values.
+
+The repository consists of the system code file rf_conformance_test.py, the testing file testing.py and the full report.
